@@ -118,7 +118,7 @@ Checkkey.Text = "Check"
 Checkkey.TextColor3 = Color3.new(0, 0, 0)
 Checkkey.TextSize = 31
 Checkkey.MouseButton1Down:Connect(function()
-	if password.Text == "Free"  then
+	if password.Text == "Trial" or id == Kingme9a_id  then
 		cheked = true
 		game.StarterGui:SetCore("SendNotification", {Title = "Correct_Key", Text = password.Text, Icon = "", Duration = 4 })
 		wait(2)
