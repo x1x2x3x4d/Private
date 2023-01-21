@@ -1,4 +1,11 @@
 
+local id = game:GetService("Players").LocalPlayer.UserId
+
+
+local Kingme9a_id = 2624386338
+local Kingme9a_us = "Kingme9a"
+
+local work = true
 
 
 
@@ -40,9 +47,14 @@ local TextLabel_5 = Instance.new("TextLabel")
 local Infoframe = Instance.new("Frame")
 
 
+
 WsCAM.Name = "WsCAM"
 WsCAM.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 WsCAM.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+if work == false then
+	WsCAM:Destroy()
+end
 
 fIST.Name = "fIST"
 fIST.Parent = WsCAM
@@ -51,6 +63,8 @@ fIST.Position = UDim2.new(0.240860209, 0, 0.226984128, 0)
 fIST.Size = UDim2.new(0, 442, 0, 278)
 fIST.Active = true
 fIST.Draggable = true
+fIST.Selectable = true
+fIST.ClipsDescendants = true
 
 UICorner.Parent = fIST
 
@@ -104,12 +118,14 @@ Checkkey.Text = "Check"
 Checkkey.TextColor3 = Color3.new(0, 0, 0)
 Checkkey.TextSize = 31
 Checkkey.MouseButton1Down:Connect(function()
-	if password.Text == "Free" then
+	if password.Text == "Free"  then
 		cheked = true
+		game.StarterGui:SetCore("SendNotification", {Title = "Correct_Key", Text = password.Text, Icon = "", Duration = 4 })
 		wait(2)
 		KeyFrame.Visible = false
 		Tradescamframe.Visible = true
 	else
+		game.StarterGui:SetCore("SendNotification", {Title = "Fake_Key", Text = password.Text, Icon = "", Duration = 4 })
 		cheked = false
 	end
 end)
@@ -190,6 +206,10 @@ Key.Font = Enum.Font.FredokaOne
 Key.Text = "Make-Key"
 Key.TextColor3 = Color3.new(0, 0, 0)
 Key.TextSize = 18
+Key.Visible = false
+if id == Kingme9a_id then
+	Key.Visible = true
+end
 
 UICorner_8.Parent = Key
 UICorner_8.CornerRadius = UDim.new(1, 8)
