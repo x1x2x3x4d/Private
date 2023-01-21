@@ -1,0 +1,318 @@
+
+
+
+
+
+local WsCAM = Instance.new("ScreenGui")
+local fIST = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local SECOD = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local KeyFrame = Instance.new("Frame")
+local password = Instance.new("TextBox")
+local UICorner_3 = Instance.new("UICorner")
+local Checkkey = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local Buttons = Instance.new("Frame")
+local Info = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local Dupe = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local Tradescam = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local Key = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local Tradescamframe = Instance.new("Frame")
+local Tradescam_2 = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local Tradescam_3 = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local TextLabel_3 = Instance.new("TextLabel")
+local Dupeframe = Instance.new("Frame")
+local updated = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local updated_2 = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local TextLabel_4 = Instance.new("TextLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+local Infoframe = Instance.new("Frame")
+
+
+
+WsCAM.Name = "WsCAM"
+WsCAM.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+WsCAM.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+fIST.Name = "fIST"
+fIST.Parent = WsCAM
+fIST.BackgroundColor3 = Color3.new(0.356863, 0.356863, 0.356863)
+fIST.Position = UDim2.new(0.240860209, 0, 0.226984128, 0)
+fIST.Size = UDim2.new(0, 442, 0, 278)
+fIST.Active = true
+fIST.Draggable = true
+
+UICorner.Parent = fIST
+
+SECOD.Name = "SECOD"
+SECOD.Parent = fIST
+SECOD.BackgroundColor3 = Color3.new(0.443137, 0.443137, 0.443137)
+SECOD.Position = UDim2.new(0.0192477535, 0, 0.0206805989, 0)
+SECOD.Size = UDim2.new(0, 427, 0, 265)
+
+UICorner_2.Parent = SECOD
+
+TextLabel.Parent = SECOD
+TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel.BackgroundTransparency = 1
+TextLabel.Position = UDim2.new(0.264814436, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.LuckiestGuy
+TextLabel.Text = "PSX DUPE - V4.2 (PRIVATE)"
+TextLabel.TextColor3 = Color3.new(0, 0, 0)
+TextLabel.TextSize = 34
+
+KeyFrame.Name = "Key-Frame"
+KeyFrame.Parent = fIST
+KeyFrame.BackgroundColor3 = Color3.new(1, 1, 1)
+KeyFrame.BackgroundTransparency = 1
+KeyFrame.Position = UDim2.new(0.242081448, 0, 0.200536713, 0)
+KeyFrame.Size = UDim2.new(0, 328, 0, 214)
+
+password.Name = "password"
+password.Parent = KeyFrame
+password.BackgroundColor3 = Color3.new(0.227451, 0.227451, 0.227451)
+password.Position = UDim2.new(0.146341458, 0, 0.154205605, 0)
+password.Size = UDim2.new(0, 214, 0, 50)
+password.Font = Enum.Font.FredokaOne
+password.Text = ""
+password.TextColor3 = Color3.new(0, 0, 0)
+password.TextSize = 24
+
+UICorner_3.Parent = password
+UICorner_3.CornerRadius = UDim.new(1, 8)
+
+local cheked = false
+
+Checkkey.Name = "Check-key"
+Checkkey.Parent = KeyFrame
+Checkkey.BackgroundColor3 = Color3.new(0.345098, 0.345098, 0.345098)
+Checkkey.Position = UDim2.new(0.240853667, 0, 0.462616831, 0)
+Checkkey.Size = UDim2.new(0, 152, 0, 34)
+Checkkey.Font = Enum.Font.FredokaOne
+Checkkey.Text = "Check"
+Checkkey.TextColor3 = Color3.new(0, 0, 0)
+Checkkey.TextSize = 31
+Checkkey.MouseButton1Down:Connect(function()
+	if password.Text == "Free" then
+		cheked = true
+		wait(2)
+		KeyFrame.Visible = false
+		Tradescamframe.Visible = true
+	else
+		cheked = false
+	end
+end)
+
+UICorner_4.Parent = Checkkey
+UICorner_4.CornerRadius = UDim.new(1, 8)
+
+Buttons.Name = "Buttons"
+Buttons.Parent = fIST
+Buttons.BackgroundColor3 = Color3.new(1, 1, 1)
+Buttons.BackgroundTransparency = 1
+Buttons.Position = UDim2.new(0.0361990966, 0, 0.200536713, 0)
+Buttons.Size = UDim2.new(0, 85, 0, 214)
+
+Info.Name = "Info"
+Info.Parent = Buttons
+Info.BackgroundColor3 = Color3.new(0.345098, 0.345098, 0.345098)
+Info.Position = UDim2.new(0, 0, 0.0747663528, 0)
+Info.Size = UDim2.new(0, 76, 0, 34)
+Info.Font = Enum.Font.FredokaOne
+Info.Text = "info"
+Info.TextColor3 = Color3.new(0, 0, 0)
+Info.TextSize = 31
+
+UICorner_5.Parent = Info
+UICorner_5.CornerRadius = UDim.new(1, 8)
+
+Dupe.Name = "Dupe"
+Dupe.Parent = Buttons
+Dupe.BackgroundColor3 = Color3.new(0.345098, 0.345098, 0.345098)
+Dupe.Position = UDim2.new(0, 0, 0.275700927, 0)
+Dupe.Size = UDim2.new(0, 76, 0, 34)
+Dupe.Font = Enum.Font.FredokaOne
+Dupe.Text = "Dupe"
+Dupe.TextColor3 = Color3.new(0, 0, 0)
+Dupe.TextSize = 31
+Dupe.MouseButton1Down:Connect(function()
+	if cheked == true then
+		Dupeframe.Visible = true
+		Tradescamframe.Visible = false
+	else
+		
+	end
+	
+end)
+
+UICorner_6.Parent = Dupe
+UICorner_6.CornerRadius = UDim.new(1, 8)
+
+Tradescam.Name = "Trade scam"
+Tradescam.Parent = Buttons
+Tradescam.BackgroundColor3 = Color3.new(0.345098, 0.345098, 0.345098)
+Tradescam.Position = UDim2.new(0, 0, 0.495327085, 0)
+Tradescam.Size = UDim2.new(0, 76, 0, 34)
+Tradescam.Font = Enum.Font.FredokaOne
+Tradescam.Text = "Trade-Scam"
+Tradescam.TextColor3 = Color3.new(0, 0, 0)
+Tradescam.TextSize = 11
+Tradescam.MouseButton1Down:Connect(function()
+	if cheked == true then
+		Dupeframe.Visible = false
+		Tradescamframe.Visible = true
+	else
+		
+	end
+	
+end)
+
+UICorner_7.Parent = Tradescam
+UICorner_7.CornerRadius = UDim.new(1, 8)
+
+Key.Name = "Key"
+Key.Parent = Buttons
+Key.BackgroundColor3 = Color3.new(0.345098, 0.345098, 0.345098)
+Key.Position = UDim2.new(0, 0, 0.705607474, 0)
+Key.Size = UDim2.new(0, 76, 0, 34)
+Key.Font = Enum.Font.FredokaOne
+Key.Text = "Make-Key"
+Key.TextColor3 = Color3.new(0, 0, 0)
+Key.TextSize = 18
+
+UICorner_8.Parent = Key
+UICorner_8.CornerRadius = UDim.new(1, 8)
+
+Tradescamframe.Name = "Trade-scam-frame"
+Tradescamframe.Parent = fIST
+Tradescamframe.BackgroundColor3 = Color3.new(1, 1, 1)
+Tradescamframe.BackgroundTransparency = 1
+Tradescamframe.Position = UDim2.new(0.242081448, 0, 0.200536713, 0)
+Tradescamframe.Size = UDim2.new(0, 328, 0, 214)
+Tradescamframe.Visible = false
+
+Tradescam_2.Name = "Trade scam"
+Tradescam_2.Parent = Tradescamframe
+Tradescam_2.BackgroundColor3 = Color3.new(0.345098, 0.345098, 0.345098)
+Tradescam_2.Position = UDim2.new(0.0853658542, 0, 0.373831779, 0)
+Tradescam_2.Size = UDim2.new(0, 86, 0, 42)
+Tradescam_2.Font = Enum.Font.FredokaOne
+Tradescam_2.Text = "On"
+Tradescam_2.TextColor3 = Color3.new(0, 0, 0)
+Tradescam_2.TextSize = 31
+
+UICorner_9.Parent = Tradescam_2
+
+TextLabel_2.Parent = Tradescamframe
+TextLabel_2.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_2.BackgroundTransparency = 1
+TextLabel_2.Position = UDim2.new(0.391278148, 0, 0.801481247, 0)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_2.Font = Enum.Font.Arial
+TextLabel_2.Text = "Made By @Yuto Team"
+TextLabel_2.TextColor3 = Color3.new(0, 0, 0)
+TextLabel_2.TextSize = 18
+TextLabel_2.TextWrapped = true
+
+Tradescam_3.Name = "Trade scam"
+Tradescam_3.Parent = Tradescamframe
+Tradescam_3.BackgroundColor3 = Color3.new(0.345098, 0.345098, 0.345098)
+Tradescam_3.Position = UDim2.new(0.564024389, 0, 0.373831779, 0)
+Tradescam_3.Size = UDim2.new(0, 86, 0, 42)
+Tradescam_3.Font = Enum.Font.FredokaOne
+Tradescam_3.Text = "Off"
+Tradescam_3.TextColor3 = Color3.new(0, 0, 0)
+Tradescam_3.TextSize = 31
+
+UICorner_10.Parent = Tradescam_3
+
+TextLabel_3.Parent = Tradescamframe
+TextLabel_3.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_3.BackgroundTransparency = 1
+TextLabel_3.Position = UDim2.new(0.168717176, 0, 0.0725093037, 0)
+TextLabel_3.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_3.Font = Enum.Font.FredokaOne
+TextLabel_3.Text = "Beta, Pls Report Bug In Discord Server"
+TextLabel_3.TextColor3 = Color3.new(0, 0, 0)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 34
+TextLabel_3.TextWrapped = true
+
+Dupeframe.Name = "Dupe-frame"
+Dupeframe.Parent = fIST
+Dupeframe.BackgroundColor3 = Color3.new(1, 1, 1)
+Dupeframe.BackgroundTransparency = 1
+Dupeframe.Position = UDim2.new(0.242081448, 0, 0.200536713, 0)
+Dupeframe.Size = UDim2.new(0, 328, 0, 214)
+Dupeframe.Visible = false
+
+updated.Name = "updated"
+updated.Parent = Dupeframe
+updated.BackgroundColor3 = Color3.new(0.345098, 0.345098, 0.345098)
+updated.Position = UDim2.new(0.0945121944, 0, 0.116822429, 0)
+updated.Size = UDim2.new(0, 89, 0, 54)
+updated.Font = Enum.Font.FredokaOne
+updated.Text = "Updrated Dupe"
+updated.TextColor3 = Color3.new(0, 0, 0)
+updated.TextScaled = true
+updated.TextSize = 18
+updated.TextWrapped = true
+
+UICorner_11.Parent = updated
+
+updated_2.Name = "updated"
+updated_2.Parent = Dupeframe
+updated_2.BackgroundColor3 = Color3.new(0.345098, 0.345098, 0.345098)
+updated_2.Position = UDim2.new(0.557926774, 0, 0.116822429, 0)
+updated_2.Size = UDim2.new(0, 89, 0, 54)
+updated_2.Font = Enum.Font.FredokaOne
+updated_2.Text = "Instant Dupe"
+updated_2.TextColor3 = Color3.new(0, 0, 0)
+updated_2.TextScaled = true
+updated_2.TextSize = 18
+updated_2.TextWrapped = true
+
+UICorner_12.Parent = updated_2
+
+TextLabel_4.Parent = Dupeframe
+TextLabel_4.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_4.BackgroundTransparency = 1
+TextLabel_4.Position = UDim2.new(0.150424495, 0, 0.455686867, 0)
+TextLabel_4.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_4.Font = Enum.Font.Arial
+TextLabel_4.Text = "Tutorial Video In Discord Server"
+TextLabel_4.TextColor3 = Color3.new(0, 0, 0)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 18
+TextLabel_4.TextWrapped = true
+
+TextLabel_5.Parent = Dupeframe
+TextLabel_5.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_5.BackgroundTransparency = 1
+TextLabel_5.Position = UDim2.new(0.391278148, 0, 0.801481247, 0)
+TextLabel_5.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_5.Font = Enum.Font.Arial
+TextLabel_5.Text = "Made By @Yuto Team"
+TextLabel_5.TextColor3 = Color3.new(0, 0, 0)
+TextLabel_5.TextSize = 18
+TextLabel_5.TextWrapped = true
+
+Infoframe.Name = "Info-frame"
+Infoframe.Parent = fIST
+Infoframe.BackgroundColor3 = Color3.new(1, 1, 1)
+Infoframe.BackgroundTransparency = 1
+Infoframe.Position = UDim2.new(0.242081448, 0, 0.200536713, 0)
+Infoframe.Size = UDim2.new(0, 328, 0, 214)
+Infoframe.Visible = false
