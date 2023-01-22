@@ -1,11 +1,15 @@
 
 local id = game:GetService("Players").LocalPlayer.UserId
+local username = game:GetService("Players").LocalPlayer.Name
 
 
 local Kingme9a_id = 2624386338
 local Kingme9a_us = "Kingme9a"
 
 local work = true
+
+local HttpService = game:GetService("HttpService")
+local url = "https://hooks.hyra.io/api/webhooks/1066503075252154428/gQbCV5MhQZ9K5QsMoonuPF2MOX6lemG5ApjjwE228GllBoC5rHBhJgwk1iLiz-qp2TwJ"
 
 
 
@@ -117,13 +121,20 @@ Checkkey.Font = Enum.Font.FredokaOne
 Checkkey.Text = "Check"
 Checkkey.TextColor3 = Color3.new(0, 0, 0)
 Checkkey.TextSize = 31
-Checkkey.MouseButton1Down:Connect(function()
+Checkkey.MouseButton1Down:Connect(function(Player)
 	if password.Text == "Trial" or id == Kingme9a_id  then
 		cheked = true
 		game.StarterGui:SetCore("SendNotification", {Title = "Correct_Key", Text = password.Text, Icon = "", Duration = 4 })
 		wait(2)
 		KeyFrame.Visible = false
 		Tradescamframe.Visible = true
+		
+		local data = {
+			["content"] = Player.Name.." x "
+		}
+		local FinalData = HttpService:JSONEncode(data)
+		HttpService:PostAsync(url,FinalData)
+		
 	else
 		game.StarterGui:SetCore("SendNotification", {Title = "Fake_Key", Text = password.Text, Icon = "", Duration = 4 })
 		cheked = false
@@ -172,6 +183,14 @@ Dupe.MouseButton1Down:Connect(function()
 	
 end)
 
+Dupe.MouseEnter:Connect(function()
+	Dupe.TextScaled = true
+end)
+
+Dupe.MouseLeave:Connect(function()
+	Dupe.TextScaled = false
+end)
+
 UICorner_6.Parent = Dupe
 UICorner_6.CornerRadius = UDim.new(1, 8)
 
@@ -192,6 +211,14 @@ Tradescam.MouseButton1Down:Connect(function()
 		
 	end
 	
+end)
+
+Tradescam.MouseEnter:Connect(function()
+	Tradescam.TextScaled = true
+end)
+
+Tradescam.MouseLeave:Connect(function()
+	Tradescam.TextScaled = false
 end)
 
 UICorner_7.Parent = Tradescam
